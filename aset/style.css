@@ -1,0 +1,1563 @@
+#dannsmain
+{
+   background: #EEEEEE;
+   margin:0 auto;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.dannshmenu
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.dannsbutton
+{
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #164A6F;
+   background: linear-gradient(top, #55982F 0, #035A0B 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #55982F 0, #035A0B 100%) no-repeat;
+   background: -moz-linear-gradient(top, #55982F 0, #035A0B 100%) no-repeat;
+   background: -o-linear-gradient(top, #55982F 0, #035A0B 100%) no-repeat;
+   background: -ms-linear-gradient(top, #55982F 0, #035A0B 100%) no-repeat;
+   background: linear-gradient(top, #55982F 0, #035A0B 100%) no-repeat;
+   -svg-background: linear-gradient(top, #55982F 0, #035A0B 100%) no-repeat;
+   -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   border-radius:10px;
+   border:1px solid #8A99A8;
+   padding:0 10px;
+   margin:0 auto;
+   height:24px;
+}
+
+.dannspostcontent,
+.dannspostheadericons,
+.dannspostfootericons,
+.dannsblockcontent,
+ul.dannsvmenu a 
+{
+   text-align: left;
+}
+
+.dannspostcontent,
+.dannspostcontent li,
+.dannspostcontent table,
+.dannspostcontent a,
+.dannspostcontent a:link,
+.dannspostcontent a:visited,
+.dannspostcontent a.visited,
+.dannspostcontent a:hover,
+.dannspostcontent a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.dannspostcontent p
+{
+   margin: 13px 0;
+}
+
+.dannspostcontent h1, .dannspostcontent h1 a, .dannspostcontent h1 a:link, .dannspostcontent h1 a:visited, .dannspostcontent h1 a:hover,
+.dannspostcontent h2, .dannspostcontent h2 a, .dannspostcontent h2 a:link, .dannspostcontent h2 a:visited, .dannspostcontent h2 a:hover,
+.dannspostcontent h3, .dannspostcontent h3 a, .dannspostcontent h3 a:link, .dannspostcontent h3 a:visited, .dannspostcontent h3 a:hover,
+.dannspostcontent h4, .dannspostcontent h4 a, .dannspostcontent h4 a:link, .dannspostcontent h4 a:visited, .dannspostcontent h4 a:hover,
+.dannspostcontent h5, .dannspostcontent h5 a, .dannspostcontent h5 a:link, .dannspostcontent h5 a:visited, .dannspostcontent h5 a:hover,
+.dannspostcontent h6, .dannspostcontent h6 a, .dannspostcontent h6 a:link, .dannspostcontent h6 a:visited, .dannspostcontent h6 a:hover,
+.dannsblockheader .t, .dannsblockheader .t a, .dannsblockheader .t a:link, .dannsblockheader .t a:visited, .dannsblockheader .t a:hover,
+.dannsvmenublockheader .t, .dannsvmenublockheader .t a, .dannsvmenublockheader .t a:link, .dannsvmenublockheader .t a:visited, .dannsvmenublockheader .t a:hover,
+.dannsheadline, .dannsheadline a, .dannsheadline a:link, .dannsheadline a:visited, .dannsheadline a:hover,
+.dannsslogan, .dannsslogan a, .dannsslogan a:link, .dannsslogan a:visited, .dannsslogan a:hover,
+.dannspostheader, .dannspostheader a, .dannspostheader a:link, .dannspostheader a:visited, .dannspostheader a:hover
+{
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 120%;
+}
+
+.dannspostcontent a, .dannspostcontent a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FB8950;
+}
+
+.dannspostcontent a:visited, .dannspostcontent a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #A6B7C9;
+}
+
+.dannspostcontent  a:hover, .dannspostcontent a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #FCA173;
+}
+
+.dannspostcontent h1
+{
+   color: #98A6B3;
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannsblockcontent h1
+{
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h1 a, .dannspostcontent h1 a:link, .dannspostcontent h1 a:hover, .dannspostcontent h1 a:visited, .dannsblockcontent h1 a, .dannsblockcontent h1 a:link, .dannsblockcontent h1 a:hover, .dannsblockcontent h1 a:visited 
+{
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h2
+{
+   color: #ADB8C2;
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannsblockcontent h2
+{
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h2 a, .dannspostcontent h2 a:link, .dannspostcontent h2 a:hover, .dannspostcontent h2 a:visited, .dannsblockcontent h2 a, .dannsblockcontent h2 a:link, .dannsblockcontent h2 a:hover, .dannsblockcontent h2 a:visited 
+{
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h3
+{
+   color: #FCA173;
+   margin: 10px 0 0;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannsblockcontent h3
+{
+   margin: 10px 0 0;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h3 a, .dannspostcontent h3 a:link, .dannspostcontent h3 a:hover, .dannspostcontent h3 a:visited, .dannsblockcontent h3 a, .dannsblockcontent h3 a:link, .dannsblockcontent h3 a:hover, .dannsblockcontent h3 a:visited 
+{
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h4
+{
+   color: #EFF2F5;
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannsblockcontent h4
+{
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h4 a, .dannspostcontent h4 a:link, .dannspostcontent h4 a:hover, .dannspostcontent h4 a:visited, .dannsblockcontent h4 a, .dannsblockcontent h4 a:link, .dannsblockcontent h4 a:hover, .dannsblockcontent h4 a:visited 
+{
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h5
+{
+   color: #EFF2F5;
+   margin: 10px 0 0;
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannsblockcontent h5
+{
+   margin: 10px 0 0;
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h5 a, .dannspostcontent h5 a:link, .dannspostcontent h5 a:hover, .dannspostcontent h5 a:visited, .dannsblockcontent h5 a, .dannsblockcontent h5 a:link, .dannsblockcontent h5 a:hover, .dannsblockcontent h5 a:visited 
+{
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h6
+{
+   color: #BCC9D7;
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannsblockcontent h6
+{
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannspostcontent h6 a, .dannspostcontent h6 a:link, .dannspostcontent h6 a:hover, .dannspostcontent h6 a:visited, .dannsblockcontent h6 a, .dannsblockcontent h6 a:link, .dannsblockcontent h6 a:hover, .dannsblockcontent h6 a:visited 
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+header, footer, article, nav, #dannshmenu-bg, .dannssheet, .dannshmenu a, .dannsvmenu a, .dannsslidenavigator > a, .dannscheckbox:before, .dannsradiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #dannshmenu-bg, .dannssheet, .dannsslidenavigator > a, .dannscheckbox:before, .dannsradiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 300px;
+   color: #CFD8E2;
+}
+
+.clearfix:before, .clearfix:after {
+   content: "";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
+}
+
+.cleared {
+   font: 0/0 serif;
+   clear: both;
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .dannspostcontent li h1, .dannsblockcontent li h1 
+{
+   margin:1px;
+} 
+li h2, .dannspostcontent li h2, .dannsblockcontent li h2 
+{
+   margin:1px;
+} 
+li h3, .dannspostcontent li h3, .dannsblockcontent li h3 
+{
+   margin:1px;
+} 
+li h4, .dannspostcontent li h4, .dannsblockcontent li h4 
+{
+   margin:1px;
+} 
+li h5, .dannspostcontent li h5, .dannsblockcontent li h5 
+{
+   margin:1px;
+} 
+li h6, .dannspostcontent li h6, .dannsblockcontent li h6 
+{
+   margin:1px;
+} 
+li p, .dannspostcontent li p, .dannsblockcontent li p 
+{
+   margin:1px;
+}
+
+
+.dannsshapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.dannsslider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.dannsslidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.dannsslidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.dannsheadline
+{
+  display: inline-block;
+  position: absolute;
+  min-width: 50px;
+  top: 29px;
+  left: 1.23%;
+  line-height: 100%;
+  margin-left: -2px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 99;
+}
+
+.dannsheadline, 
+.dannsheadline a, 
+.dannsheadline a:link, 
+.dannsheadline a:visited, 
+.dannsheadline a:hover
+{
+font-size: 36px;
+font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+font-weight: normal;
+font-style: normal;
+text-decoration: none;
+text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin: 0;
+  color: #F55505 !important;
+  white-space: nowrap;
+}
+.dannsobject227400126 h1, 
+.dannsobject227400126 h2, 
+.dannsobject227400126 h3, 
+.dannsobject227400126 h4, 
+.dannsobject227400126 h5, 
+.dannsobject227400126 h6, 
+.dannsobject227400126 p, 
+.dannsobject227400126 a, 
+.dannsobject227400126 ul, 
+.dannsobject227400126 ol, 
+.dannsobject227400126 li
+{
+  line-height: 125%;
+}
+
+.dannsobject227400126
+{  
+  position: absolute;
+  top: 40px;
+  left: 97.5%;
+  margin-left: -195px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  overflow: hidden;
+    z-index: 101;
+  width: 200px;
+  height: 24px;
+}
+
+
+
+
+
+
+
+.dannssheet
+{
+   background: #035A0B;
+   -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   border-radius:10px;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   border:1px solid #FFFFFF;
+   margin:30px auto 0;
+   position:relative;
+   cursor:auto;
+   width: 300px;
+   z-index: auto !important;
+}
+
+.dannslayout-wrapper
+{
+   position: relative;
+   margin: 0 auto 0 auto;
+   z-index: auto !important;
+}
+
+.dannscontent-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+   border-collapse: collapse;
+}
+
+.dannscontent-layout-row 
+{
+   display: table-row;
+}
+
+.dannslayout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+.dannsblock
+{
+   margin:3px;
+}
+div.dannsblock img
+{
+   border: none;
+   margin: 0;
+}
+
+.dannsblockheader
+{
+   padding:6px 5px;
+   margin:0 auto 2px;
+}
+.dannsblockheader .t,
+.dannsblockheader .t a,
+.dannsblockheader .t a:link,
+.dannsblockheader .t a:visited, 
+.dannsblockheader .t a:hover
+{
+   color: #FFFFFF;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   margin: 0 5px;
+}
+
+.dannsblockcontent
+{
+   padding:5px;
+   margin:0 auto;
+   color: #CFD8E2;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+.dannsblockcontent table,
+.dannsblockcontent li, 
+.dannsblockcontent a,
+.dannsblockcontent a:link,
+.dannsblockcontent a:visited,
+.dannsblockcontent a:hover
+{
+   color: #CFD8E2;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+
+.dannsblockcontent p
+{
+   margin: 0 5px;
+}
+
+.dannsblockcontent a, .dannsblockcontent a:link
+{
+   color: #FCA173;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannsblockcontent a:visited, .dannsblockcontent a.visited
+{
+   color: #FFFFFF;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.dannsblockcontent a:hover, .dannsblockcontent a.hover
+{
+   color: #FB8950;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+.dannsblock ul>li:before
+{
+   content:url('images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -12px;
+}
+.opera .dannsblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.dannsblock li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+   color: #EFF2F5;
+   margin: 5px 0 0 10px;
+}
+
+.dannsblock ul>li, .dannsblock ol
+{
+   padding: 0;
+}
+
+.dannsblock ul>li
+{
+   padding-left: 12px;
+}
+
+.dannsbreadcrumbs
+{
+   margin:0 auto;
+}
+
+a.dannsbutton,
+a.dannsbutton:link,
+a:link.dannsbutton:link,
+body a.dannsbutton:link,
+a.dannsbutton:visited,
+body a.dannsbutton:visited,
+input.dannsbutton,
+button.dannsbutton
+{
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #FFFFFF;
+   margin: 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 24px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.dannsbutton img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .dannsbutton
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea
+{
+   vertical-align: middle;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.dannsblock select 
+{
+   width:96%;
+}
+
+input.dannsbutton
+{
+   float: none !important;
+}
+
+.dannsbutton.active, .dannsbutton.active:hover
+{
+   background: #164A6F;
+   background: linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: -moz-linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: -o-linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: -ms-linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   -svg-background: linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   border-radius:10px;
+   border:1px solid #8A99A8;
+   padding:0 10px;
+   margin:0 auto;
+}
+.dannsbutton.active, .dannsbutton.active:hover {
+   color: #FFFFFF !important;
+}
+
+.dannsbutton.hover, .dannsbutton:hover
+{
+   background: #164A6F;
+   background: linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: -moz-linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: -o-linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: -ms-linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   background: linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   -svg-background: linear-gradient(top, #035A0B 0, #55982F 100%) no-repeat;
+   -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   border-radius:10px;
+   border:1px solid #A1ADBA;
+   padding:0 10px;
+   margin:0 auto;
+}
+.dannsbutton.hover, .dannsbutton:hover {
+   color: #FFFFFF !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   background: #F9FAFB;
+   -webkit-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.2);
+   -moz-box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.2);
+   box-shadow:0 0 2px 1px rgba(0, 0, 0, 0.2);
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   width: 100%;
+   padding: 4px 0;
+   color: #3D5166 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+input.dannserror, textarea.dannserror
+{
+   background: #F9FAFB;
+   border:1px solid #E2341D;
+   margin:0 auto;
+}
+input.dannserror, textarea.dannserror {
+   color: #3D5166 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.dannssearch input[type="text"]
+{
+   background: #FFFFFF;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   border:1px solid #CCD6E0;
+   margin:0 auto;
+   width: 100%;
+   padding: 3px 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #7D2B03 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.dannssearch 
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.dannssearch input
+{
+   top:0;
+   right:0;
+}
+
+form.dannssearch>input {
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+ 
+form.dannssearch input[type="submit"]
+{
+   margin:0 auto;
+   color: #FFFFFF !important;
+   position:absolute;
+   display:block;
+   left: auto;
+   border:none;
+   background:url('images/searchicon.png') center center no-repeat;
+   width:24px;
+   height: 100%;
+   padding:0;
+}
+
+label.dannscheckbox:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.dannscheckbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+}
+
+.dannscheckbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.dannscheckbox.active:before
+{
+   background: #FC905A;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.dannscheckbox.hovered:before
+{
+   background: #D9DEE3;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.dannsradiobutton:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+}
+label.dannsradiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 12px;
+   display: inline-block;
+}
+
+.dannsradiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.dannsradiobutton.active:before
+{
+   background: #B9C2CB;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+label.dannsradiobutton.hovered:before
+{
+   background: #D9DEE3;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+.dannspost
+{
+   padding:5px;
+}
+a img
+{
+   border: 0;
+}
+
+.dannsarticle img, img.dannsarticle, .dannsblock img, .dannsfooter img
+{
+   margin: 0 0 0 0;
+}
+
+.dannsmetadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.dannsarticle table, table.dannsarticle
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.dannspost .dannscontent-layout-br
+{
+   height: 0;
+}
+
+.dannsarticle th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 0 0 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.dannscollage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.dannspostheader
+{
+   color: #EFF2F5;
+   margin: 5px 10px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.dannspostheader a, 
+.dannspostheader a:link, 
+.dannspostheader a:visited,
+.dannspostheader a.visited,
+.dannspostheader a:hover,
+.dannspostheader a.hovered
+{
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.dannspostheader a, .dannspostheader a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #FDB896;
+}
+
+.dannspostheader a:visited, .dannspostheader a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #A6B7C9;
+}
+
+.dannspostheader a:hover,  .dannspostheader a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #FCA173;
+}
+
+.dannspostheadericons,
+.dannspostheadericons a,
+.dannspostheadericons a:link,
+.dannspostheadericons a:visited,
+.dannspostheadericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #EFF2F5;
+}
+
+.dannspostheadericons
+{
+   display:inline-block;
+   padding: 1px;
+   margin: 0 0 0 10px;
+}
+
+.dannspostheadericons a, .dannspostheadericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FEEBE1;
+}
+
+.dannspostheadericons a:visited, .dannspostheadericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   color: #D6DEE6;
+}
+
+.dannspostheadericons a:hover, .dannspostheadericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: underline;
+   color: #FED3BE;
+}
+
+.dannspostdateicon:before
+{
+   content:url('images/postdateicon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .dannspostdateicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.dannspostauthoricon:before
+{
+   content:url('images/postauthoricon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .dannspostauthoricon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.dannspostediticon:before
+{
+   content:url('images/postediticon.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .dannspostediticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.dannspostcontent ul>li:before,  .dannspost ul>li:before,  .dannstextblock ul>li:before
+{
+   content:url('images/postbullets.png');
+   margin-right:10px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .dannspostcontent ul>li:before, .opera   .dannspost ul>li:before, .opera   .dannstextblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.dannspostcontent li, .dannspost li, .dannstextblock li
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #303F50;
+   margin: 3px 0 0 11px;
+}
+
+.dannspostcontent ul>li, .dannspost ul>li, .dannstextblock ul>li, .dannspostcontent ol, .dannspost ol, .dannstextblock ol
+{
+   padding: 0;
+}
+
+.dannspostcontent ul>li, .dannspost ul>li, .dannstextblock ul>li
+{
+   padding-left: 17px;
+}
+
+.dannspostcontent ul>li:before,  .dannspost ul>li:before,  .dannstextblock ul>li:before
+{
+   margin-left: -17px;
+}
+
+.dannspostcontent ol, .dannspost ol, .dannstextblock ol, .dannspostcontent ul, .dannspost ul, .dannstextblock ul
+{
+   margin: 1em 0 1em 11px;
+}
+
+.dannspostcontent li ol, .dannspost li ol, .dannstextblock li ol, .dannspostcontent li ul, .dannspost li ul, .dannstextblock li ul
+{
+   margin: 0.5em 0 0.5em 11px;
+}
+
+.dannspostcontent li, .dannspost li, .dannstextblock li
+{
+   margin: 3px 0 0 0;
+}
+
+.dannspostcontent ol>li, .dannspost ol>li, .dannstextblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.dannspostcontent ul>li, .dannspost ul>li, .dannstextblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #EFF2F5 url('images/postquote.png') no-repeat scroll;
+   padding:10px 10px 10px 47px;
+   margin:10px 0 0 25px;
+   color: #0D1216;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .dannspostcontent blockquote a, .dannsblockcontent blockquote a, .dannsfooter blockquote a,
+blockquote a:link, .dannspostcontent blockquote a:link, .dannsblockcontent blockquote a:link, .dannsfooter blockquote a:link,
+blockquote a:visited, .dannspostcontent blockquote a:visited, .dannsblockcontent blockquote a:visited, .dannsfooter blockquote a:visited,
+blockquote a:hover, .dannspostcontent blockquote a:hover, .dannsblockcontent blockquote a:hover, .dannsfooter blockquote a:hover
+{
+   color: #0D1216;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.dannspostcontent blockquote p,
+.dannsblockcontent blockquote p,
+.dannsfooter blockquote p
+{
+   margin: 0;
+   margin: 5px 0;
+}
+
+.dannsfooter
+{
+   -webkit-border-radius:9px;
+   -moz-border-radius:9px;
+   border-radius:9px;
+   padding:5px;
+   margin:20px auto 0;
+   position: relative;
+   color: #AFBFCF;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-align: center;
+}
+
+.dannsfooter a,
+.dannsfooter a:link,
+.dannsfooter a:visited,
+.dannsfooter a:hover,
+.dannsfooter td, 
+.dannsfooter th,
+.dannsfooter caption
+{
+   color: #AFBFCF;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.dannsfooter p 
+{
+   padding:0;
+   text-align: center;
+}
+
+.dannsfooter a,
+.dannsfooter a:link
+{
+   color: #A6B7C9;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.dannsfooter a:visited
+{
+   color: #8FA5BC;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.dannsfooter a:hover
+{
+   color: #FCA173;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.dannsfooter img
+{
+   border: none;
+   margin: 0;
+}
+
+.dannsrss-tag-icon
+{
+   background:  url('images/footerrssicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:25px;
+   min-width:25px;
+   display: inline-block;
+   text-indent: 28px;
+   background-position: left center;
+}
+
+.dannsrss-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.dannsfooter ul>li:before
+{
+   content:url('images/footerbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -13px;
+}
+.opera .dannsfooter ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.dannsfooter li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #FEDDCD;
+}
+
+.dannsfooter ul>li, .dannsfooter ol
+{
+   padding: 0;
+}
+
+.dannsfooter ul>li
+{
+   padding-left: 13px;
+}
+
+.dannspage-footer, 
+.dannspage-footer a,
+.dannspage-footer a:link,
+.dannspage-footer a:visited,
+.dannspage-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #647587;
+}
+
+.dannspage-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #435970;
+}
+
+img.dannslightbox
+{
+   cursor: pointer;
+}
+
+#dannslightbox-bg *
+{
+   padding: 0;
+   margin: 0;
+}
+
+div#dannslightbox-bg
+{
+   top: 0;
+   left: 0;
+   width: 100%;
+   position: absolute;
+   height: 100%;
+   background-color: #000;
+   opacity: 0.8;
+   filter: alpha(opacity=80);
+   z-index: 9999;
+}
+
+img.dannslightbox-image
+{
+   -webkit-transition: opacity 350ms ease-in-out;
+   -moz-transition: opacity 350ms ease-in-out;
+   -o-transition: opacity 350ms ease-in-out;
+   -ms-transition: opacity 350ms ease-in-out;
+   transition: opacity 350ms ease-in-out;
+   cursor: pointer;
+   z-index: 10000;
+   position: fixed;
+   border: 6px solid #fff;
+   border-radius: 3px;
+   opacity: 0;
+   filter: alpha(opacity=0);
+}
+
+img.dannslightbox-image.active
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.lightbox-error
+{
+   position: fixed;
+   background: #fff;
+   z-index: 100;
+   opacity: 0.95;
+   padding: 20px;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   width: 300px;
+   height: 80px;
+}
+
+.loading
+{
+   position: fixed;
+   background: #fff url('images/preloader-01.gif') center center no-repeat;
+   width: 32px;
+   height: 32px;
+   z-index: 10100;
+   opacity: 0.5;
+   padding: 10px;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+}
+
+.arrow
+{
+   height: 100px;
+   width: 82px;
+   z-index: 10003;
+   position: fixed;
+   cursor: pointer;
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+}
+
+.arrow.left
+{
+   left: 9px;
+}
+.arrow.right
+{
+   right: 9px;
+}
+
+.arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.arrow.disabled 
+{
+   display: none;
+}
+
+.arrow-t, .arrow-b
+{
+   height: 6px;
+   width: 30px;
+   left: 26px;
+   background-color: #fff;
+   position: relative;
+   border-radius: 3px;
+}
+
+.arrow-t
+{
+   top: 38px;
+}
+
+.arrow-b
+{
+   top: 50px;
+}
+
+.close
+{
+   width: 22px;
+   height: 22px;
+   position: fixed;
+   top: 30px;
+   right: 39px;
+   cursor: pointer;
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+}
+
+.close:hover 
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.close .cw, .close .ccw
+{
+   position: absolute;
+   top: 8px;
+   left: -4px;
+   width: 30px;
+   height: 6px;
+   background-color: #fff;
+   border-radius: 3px;
+}
+
+.cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt 
+{
+   display: none;
+   color: #fff;
+   font-size: 2.5em;
+}
+
+.ie8 .close-alt, .ie8 .arrow-right-alt, .ie8 .arrow-left-alt {
+   display: block;
+}
+.ie8 .cw, .ie8 .ccw {
+   display: none;
+}
+
+.dannscontent-layout .dannscontent
+{
+   margin:0 auto;
+}
+
+/* Begin Additional CSS Styles */
+
+/* End Additional CSS Styles */
