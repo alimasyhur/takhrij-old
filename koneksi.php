@@ -3,7 +3,8 @@
 error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
 $host = "localhost";
 $user = "root";
-$pass = "root-123";
+// $pass = "root-123";
+$pass = "";
 
 $db = "takhrij";
 
