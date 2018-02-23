@@ -1,0 +1,9 @@
+YII_ENV="prod"
+
+APP_NAME="Takhrij"
+
+DB_DSN="mysql:host=host;dbname=dbname;port=3306"
+DB_USERNAME="root"
+DB_PASSWORD=""
+
+BASE_URL_WEB = 'http://takhrij.net'
